@@ -19,5 +19,7 @@ socket.on("message", (data) => {
 });
 const sendMessage = () => {
   const info = document.querySelector(".message").value;
+  const v1 = document.getElementById("textarea");
+  v1.value = "";
   socket.emit("message", info);
 };

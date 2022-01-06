@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+body {
+  max-width: 85%;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Noto Serif", serif;
+  background-image: url("night.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain 100%;
+  background-position: center;
+}
+
+a {
+  margin-top: 10;
+  padding-left: 20;
+  text-decoration: none;
+  color: black;
+  outline: red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav h1 {
+  font-size: 3.5vmax;
+  color: white;
+}
+nav a {
+  color: red;
+}
+.Alert {
+  color: red;
+}
+.Form form {
+  max-width: 40%;
+  padding: 1%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+.Form li {
+  list-style-type: none;
+}
+.Form label {
+  font-size: 2vmax;
+  list-style-type: none;
+}
+.Form input {
+  width: 85%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.Form button {
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 2vmax;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10vmax;
+  margin-right: 10vw;
+}
+
+.create-user form {
+  max-width: 40%;
+  padding: 1%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+.create-user li {
+  list-style-type: none;
+}
+.create-user label {
+  font-size: 2vmax;
+  list-style-type: none;
+}
+.create-user input {
+  width: 85%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.create-user button {
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 2vmax;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10vmax;
+  margin-right: 10vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -10px;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 0;
+  border-radius: 10px;
+}
+.card {
+  height: 65vh;
+  width: 80vw;
+  border: 2px solid bisque;
+  border-radius: 5px;
+}
+.row1 {
+  border: 2px;
+  border-color: blue;
+  padding: 15px;
+  background-color: bisque;
+  height: 7vw;
+}
+.row2 {
+  border: 2px;
+  border-color: blue;
+  padding: 15px;
+  background-color: cornsilk;
+  height: 65vw;
+}
+.scroll {
+  max-height: 65vw;
+  overflow-y: auto;
+}
+.row3 {
+  border: 2px;
+  border-color: blue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 7px;
+  background-color: bisque;
+  height: 10vw;
+}
+.message {
+  width: 60vw;
+  padding-left: 20px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.chat-button {
+  width: 10vw;
+  margin-left: 20px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.about {
+  max-width: 80%;
+  padding: 1%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+.contact-us {
+  background-color: cornsilk;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5vw;
+}
+.contact-us h3 {
+  font-size: 15px;
+}
+.contact-us ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  color: white;
+  width: 80%;
+  height: 5vw;
+}

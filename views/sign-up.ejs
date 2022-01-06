@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('./partials/bootstrap.ejs')%>
+  <%-include('./partials/header.ejs')%>
+  <body>
+    <%-include("./partials/nav.ejs")%>
+    <div class="create-user">
+      <form action="/create-user" method="POST">
+       <ul>
+        <li><label for="username">Username</label></li>
+        <input type="text" id="username" name="username" required />
+      <li><label for="password">Password</label></li>
+        <input type="password" id="password" name="password" required />
+      <li><label for="c-password">confirm password</label></li>
+        <input type="password" id="c-password" name="c-password" required />
+        </ul>
+        <script src="/validate.js"> 
+        </script>
+        <button onclick="validate()">Sign Up</button>
+      </form>
+    </div>
+  <%-include('./partials/footer.ejs')%>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdn.socket.io/4.4.0/socket.io.min.js"></script>
+  <%-include('./partials/bootstrap.ejs')%> <%-include('./partials/header.ejs')%>
+  <body>
+    <%-include('./partials/nav.ejs')%>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="row1"><h2></h2></div>
+            <div class="row2 scroll">
+              <div>
+                <div class="message__area"><p></p></div>
+              </div>
+            </div>
+            <div class="row3">
+              <input
+                type="text"
+                id="textarea"
+                class="message"
+                placeholder="write a message..."
+              />
+              <button class="chat-button" onclick="sendMessage()">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/client.js"></script>
+  </body>
+  <%-include('./partials/footer.ejs')%>
+</html>

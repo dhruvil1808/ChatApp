@@ -1,3 +1,4 @@
 # Web Development
-> Building a basic website using HTML, CSS, JS. <br/> 
+> Building a website using HTML, CSS, JS, ejs. <br/> 
 > Building a web app using MERN Stack.
+> used nodeJS, Express, nodemon, socket.io

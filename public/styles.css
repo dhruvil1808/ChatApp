@@ -142,6 +142,9 @@ nav a {
   background-color: cornsilk;
   height: 65vw;
 }
+.outgoing {
+  justify-content: end;
+}
 .message__area .card {
   max-height: fit-content;
   max-width: fit-content;
@@ -149,12 +152,12 @@ nav a {
   border-radius: 5px;
   margin-bottom: 2%;
 }
-.chat-user {
+.card-title {
   background-color: bisque;
   font-size: 2vh;
   margin-bottom: 0;
 }
-.chat-message {
+.card-text {
   background-color: white;
   font-size: 3vh;
   margin-bottom: 0;

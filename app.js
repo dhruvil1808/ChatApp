@@ -26,7 +26,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 io.on("connection", (socket) => {
   console.log("user connected" + socket.id);
   socket.on("message", (data) => {
-    console.log(data);
     socket.broadcast.emit("message", data);
   });
 });

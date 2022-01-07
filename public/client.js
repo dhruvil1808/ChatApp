@@ -8,7 +8,11 @@ const sendMessage = () => {
   const info = document.querySelector(".message").value;
   socket.emit("message", info);
 }; */
-
+textarea.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    sendMessage(e.target.value);
+  }
+});
 socket.on("message", (data) => {
   appendMessage(data, "incoming"); //appending div to message area
   scrollToBottom();
@@ -16,11 +20,13 @@ socket.on("message", (data) => {
 const sendMessage = () => {
   const info = document.querySelector(".message").value;
   const v1 = document.getElementById("textarea");
-  v1.value = "";
   data = { info, username };
-  appendMessage(data, "row justify-content-end height-fit-content");
-  scrollToBottom(); //appending div to message area
-  socket.emit("message", data);
+  v1.value = "";
+  if (info.length > 0) {
+    appendMessage(data, "row justify-content-end height-fit-content");
+    scrollToBottom(); //appending div to message area
+    socket.emit("message", data);
+  }
 };
 
 function appendMessage(data, type) {
@@ -35,6 +41,4 @@ function appendMessage(data, type) {
   messageArea.appendChild(maindiv); //appending div to message area
 }
 
-function scrollToBottom() {
-  messageArea.scrollTop = messageArea.scrollTop;
-}
+//function scrollToBottom() {}

@@ -45,6 +45,7 @@ nav a {
   color: red;
 }
 .Form form {
+  min-width: 40vw;
   max-width: 40%;
   padding: 1%;
   height: fit-content;
@@ -74,8 +75,7 @@ nav a {
   font-size: 2vmax;
   cursor: pointer;
   border-radius: 5px;
-  margin-left: 10vmax;
-  margin-right: 10vw;
+  margin-left: 30%;
 }
 
 .create-user form {
@@ -108,8 +108,7 @@ nav a {
   font-size: 2vmax;
   cursor: pointer;
   border-radius: 5px;
-  margin-left: 10vmax;
-  margin-right: 10vw;
+  margin-left: 35%;
 }
 
 .container {
@@ -123,7 +122,7 @@ nav a {
   border-radius: 10px;
 }
 .card {
-  height: 65vh;
+  max-height: 65vh;
   width: 80vw;
   border: 2px solid bisque;
   border-radius: 5px;
@@ -131,7 +130,7 @@ nav a {
 .row1 {
   border: 2px;
   border-color: blue;
-  padding: 15px;
+  padding: 2%;
   background-color: bisque;
   height: 7vw;
 }
@@ -142,8 +141,14 @@ nav a {
   background-color: cornsilk;
   height: 65vw;
 }
-.outgoing {
-  justify-content: end;
+.message__area .row {
+  --bs-gutter-x: 0rem;
+  padding: 0;
+  height: fit-content;
+}
+.incoming {
+  padding: 0;
+  height: fit-content;
 }
 .message__area .card {
   max-height: fit-content;
@@ -154,11 +159,13 @@ nav a {
 }
 .card-title {
   background-color: bisque;
+  padding: 0;
   font-size: 2vh;
   margin-bottom: 0;
 }
 .card-text {
   background-color: white;
+  padding: 0;
   font-size: 3vh;
   margin-bottom: 0;
 }
@@ -176,17 +183,17 @@ nav a {
   height: 10vw;
 }
 .message {
-  width: 60vw;
+  min-width: 50vw;
   padding-left: 20px;
   border-width: 1px;
   border-radius: 5px;
   border-color: black;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 .chat-button {
   width: 10vw;
-  margin-left: 20px;
+  margin-right: 7%;
   border-width: 1px;
   border-radius: 5px;
   border-color: black;

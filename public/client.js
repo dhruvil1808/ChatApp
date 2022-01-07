@@ -18,7 +18,7 @@ const sendMessage = () => {
   const v1 = document.getElementById("textarea");
   v1.value = "";
   data = { info, username };
-  appendMessage(data, "outgoing");
+  appendMessage(data, "row justify-content-end height-fit-content");
   scrollToBottom(); //appending div to message area
   socket.emit("message", data);
 };

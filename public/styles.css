@@ -142,6 +142,23 @@ nav a {
   background-color: cornsilk;
   height: 65vw;
 }
+.message__area .card {
+  max-height: fit-content;
+  max-width: fit-content;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.chat-user {
+  background-color: bisque;
+  font-size: 2vh;
+  margin-bottom: 0;
+}
+.chat-message {
+  background-color: white;
+  font-size: 3vh;
+  margin-bottom: 0;
+}
 .scroll {
   max-height: 65vw;
   overflow-y: auto;

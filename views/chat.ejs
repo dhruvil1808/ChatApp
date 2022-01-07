@@ -4,7 +4,9 @@
   <%-include('./partials/bootstrap.ejs')%> <%-include('./partials/header.ejs')%>
   <body>
     <%-include('./partials/nav.ejs')%>
-
+    <script>
+      var username = "<%=user.username%>";
+    </script>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -12,7 +14,7 @@
             <div class="row1"><h2></h2></div>
             <div class="row2 scroll">
               <div>
-                <div class="message__area"><p></p></div>
+                <div class="message__area"></div>
               </div>
             </div>
             <div class="row3">

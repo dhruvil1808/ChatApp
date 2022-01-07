@@ -21,7 +21,7 @@ const sendMessage = () => {
   v1.value = ""; //clearing the textarea after sending message
   if (info.length > 0) {
     socket.emit("message", data); //sending to the server before editing username to You as I wanted to display You in the users page
-    appendMessage(data, "row justify-content-end height-fit-content"); //appending data to message area
+    appendMessage(data, "row justify-content-end "); //appending data to message area height-fit-content
     //scrollToBottom();
   }
 };

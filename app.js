@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+var port = process.env.PORT || 3000;
 const app = express();
 const { Server } = require("socket.io");
 const io = new Server(3001, {
@@ -16,7 +17,7 @@ const DBURI =
 app.set("view engine", "ejs");
 mongoose
   .connect(DBURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(3000))
+  .then(() => app.listen(port))
   .catch((err) => console.log(err));
 
 app.use(express.static("public"));

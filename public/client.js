@@ -1,7 +1,6 @@
 const socket = io("http://localhost:3001");
 socket.on("connection");
 let messageArea = document.querySelector(".message__area");
-
 textarea.addEventListener("keyup", (e) => {
   //to listen for enter key press
   if (e.key === "Enter") {
@@ -11,7 +10,7 @@ textarea.addEventListener("keyup", (e) => {
 socket.on("message", (data) => {
   //listening for message from server
   appendMessage(data, "incoming"); //appending div to message area
-  //scrollToBottom();
+  scrolltoBottom();
 });
 const sendMessage = () => {
   //to send message to server
@@ -22,10 +21,9 @@ const sendMessage = () => {
   if (info.length > 0) {
     socket.emit("message", data); //sending to the server before editing username to You as I wanted to display You in the users page
     appendMessage(data, "row justify-content-end "); //appending data to message area height-fit-content
-    //scrollToBottom();
+    scrolltoBottom();
   }
 };
-
 function appendMessage(data, type) {
   //to append message to message area
   if (type !== "incoming") {
@@ -41,8 +39,7 @@ function appendMessage(data, type) {
   `; //injecting data into div
   messageArea.appendChild(maindiv); //appending div to message area
 }
-
-/* function scrollToBottom() {
-  var objDiv = document.getElementById(div);
-  objDiv.scrollTop = objDiv.scrollHeight;
-} */
+function scrolltoBottom() {
+  chatWindow = document.getElementById("chat-window");
+  chatWindow.scrollTo(0, chatWindow.scrollHeight);
+}

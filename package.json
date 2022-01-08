@@ -1,6 +1,6 @@
 {
-  "scripts":{
-    "start":"node app.js"
+  "scripts": {
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.1",
@@ -9,6 +9,7 @@
     "mongoose": "^6.1.4",
     "morgan": "^1.10.0",
     "socket.io": "^4.4.0",
-    "socket.io-client": "^4.4.0"
+    "socket.io-client": "^4.4.0",
+    "socketio-file-upload": "^0.7.3"
   }
 }

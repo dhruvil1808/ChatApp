@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('./partials/bootstrap.ejs')%> <%-include('./partials/header.ejs')%>
+  <body>
+    <%- include("./partials/nav.ejs")%>
+    <div class="users">
+      <h2>All Users</h2>
+      <%if(users.length>0){%> <%users.forEach(user=>{%>
+      <a class="single" href="/chat">
+        <h3 class="title"><%=user.username%></h3>
+      </a>
+      <%})%> <%} else{%>
+      <p>There are no Blogs to Display</p>
+      <%}%>
+    </div>
+    <%- include("./partials/footer.ejs")%>
+  </body>
+</html>

@@ -182,13 +182,17 @@ nav a {
   background-color: bisque;
   height: 10vw;
 }
+.file {
+  width: fit-content;
+  border-radius: 5px;
+}
 .message {
   min-width: 50vw;
   padding-left: 20px;
   border-width: 1px;
   border-radius: 5px;
   border-color: black;
-  margin-left: 7%;
+  margin-left: 5%;
   margin-right: 7%;
 }
 .chat-button {

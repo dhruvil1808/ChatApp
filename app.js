@@ -51,6 +51,23 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", { title: "About" });
 });
+/* app.get("/all-users", async (req, res) => {
+  const name = req.query.search1;
+  const pass = req.query.search2;
+  const result = await User.findOne({ username: name, password: pass });
+  if (result != null) {
+    User.find({})
+      .sort({ createdAt: -1 })
+      .then((results) => {
+        res.render("all-users", { users: results, title: result.username });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  } else {
+    res.render("index", { title: "ChatApp", alrt: "Invalid Credentials" });
+  }
+}); */
 app.get("/chat", async (req, res) => {
   const name = req.query.search1;
   const pass = req.query.search2;

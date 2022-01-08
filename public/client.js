@@ -14,8 +14,9 @@ socket.on("message", (data) => {
 });
 const sendMessage = () => {
   //to send message to server
-  const info = document.querySelector(".message").value;
+  const temp = document.querySelector(".message").value;
   const v1 = document.getElementById("textarea");
+  info = temp.trim();
   data = { info, username };
   v1.value = ""; //clearing the textarea after sending message
   if (info.length > 0) {

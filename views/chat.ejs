@@ -5,13 +5,13 @@
   <body>
     <%-include('./partials/nav.ejs')%>
     <script>
-      var username = "<%=user.username%>";
+      var username = "<%=title%>";
     </script>
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="card">
-            <div class="row1"><h2>Group Chat</h2></div>
+            <div class="row1"><h2><%=select%></h2></div>
             <div class="row2 scroll" id="chat-window">
               <div>
                 <div class="message__area" onLoad="pageScroll()"></div>

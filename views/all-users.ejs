@@ -5,11 +5,12 @@
     <%- include("./partials/nav.ejs")%>
     <div class="users">
       <h2>All Users</h2>
-      <%if(users.length>0){%> <%users.forEach(user=>{%>
-      <a class="single" href="/chat">
-        <h3 class="title"><%=user.username%></h3>
+      <%if(users.length>0){%> <%users.forEach(user=>{ if(user.username!=title)
+      {%>
+      <a class="single" href="/chat/<%=title%>/<%=user.username%>">
+        <h3 class="title" name="Select_user"><%=user.username%></h3>
       </a>
-      <%})%> <%} else{%>
+      <%}})%> <%} else{%>
       <p>There are no Blogs to Display</p>
       <%}%>
     </div>

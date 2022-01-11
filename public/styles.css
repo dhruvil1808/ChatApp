@@ -110,7 +110,20 @@ nav a {
   border-radius: 5px;
   margin-left: 35%;
 }
-
+#users {
+  background-color: bisque;
+  width: 20%;
+  height: fit-content;
+  padding: 1%;
+  display: flex;
+  overflow-y: scroll;
+}
+.rows {
+  text-align: center;
+  border: 2px solid black;
+  background-color: cornsilk;
+  margin-bottom: 5%;
+}
 .container {
   display: flex;
   flex-direction: column;

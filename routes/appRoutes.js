@@ -25,7 +25,6 @@ router.get("/about", (req, res) => {
 router.get("/chat/:username/:select", async (req, res) => {
   const select = req.params.select;
   const username = req.params.username;
-  console.log(select, username);
   res.render("chat", {
     title: username,
     select: select,

@@ -2,9 +2,9 @@
   
   "name": "ChatApp",
   "description": "a really cool app",
-  "version": "16.13.0",
   "engines": {
-    "npm": "8.3.0"
+    "npm": "8.x"
+    "node":"16.x"
   }
   "scripts": {
     "start": "nodemon app.js"

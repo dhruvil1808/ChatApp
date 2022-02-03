@@ -1,12 +1,5 @@
 {
-  
-  "name": "ChatApp",
-  "description": "a really cool app",
-  "engines": {
-    "npm": "8.x",
-    "node":"16.x"
-  },
-  "scripts": {
+ "scripts": {
     "start": "nodemon app.js"
   },
   "dependencies": {

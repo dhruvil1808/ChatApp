@@ -113,11 +113,19 @@ nav a {
 }
 #users {
   background-color: bisque;
-  width: 20%;
-  height: fit-content;
+  width: 25vw;
+  height: 65vh;
   padding: 1%;
-  display: flex;
-  overflow-y: scroll;
+  margin-left: 10px;
+  margin: 20px;
+  overflow-y: auto;
+}
+#users::-webkit-scrollbar {
+  display: none;
+}
+#users a,
+#users h3 {
+  font-size: 2.5vmax;
 }
 .rows {
   text-align: center;

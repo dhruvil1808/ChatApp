@@ -5,18 +5,19 @@
     <%- include("./partials/nav.ejs")%>
     <div class="users">
       <div class="card" id="users">
-        <%if(users.length>1){%> <%users.forEach(user=>{ if(user.username!=title)
-        {%>
-
-        <div class="rows">
-          <a class="single" href="/chat/<%=title%>/<%=user.username%>">
-            <h3 class="username" name="Select_user"><%=user.username%></h3>
-          </a>
+        <div class="col">
+          <%if(users.length>1){%> <%users.forEach(user=>{
+          if(user.username!=title) {%>
+          <div class="rows">
+            <a class="single" href="/chat/<%=title%>/<%=user.username%>">
+              <h3 class="username" name="Select_user"><%=user.username%></h3>
+            </a>
+          </div>
+          <%}})%> <%} else{%>
+          <p>There are no Blogs to Display</p>
+          <%}%>
+          <script src="/client.js"></script>
         </div>
-
-        <%}})%> <%} else{%>
-        <p>There are no Blogs to Display</p>
-        <%}%>
       </div>
     </div>
     <%- include("./partials/footer.ejs")%>

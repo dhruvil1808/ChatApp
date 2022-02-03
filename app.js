@@ -25,9 +25,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 io.on("connection", (socket) => {
   console.log("user connected" + socket.id);
+  //socket.on("login", ({ name, room }, callback) => {});
   socket.on("message", (data) => {
     socket.broadcast.emit("message", data);
   });
+  socket.on("login", ({ name, room }, callback) => {});
 });
 //routes
 app.use(appRoutes);
